@@ -1,3 +1,19 @@
 p {
     color: brown;
 }
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+
+    gap: 20px;
+}
+
+.field{
+    display: flex;
+    background-color: red;
+    font-size: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
