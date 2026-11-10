@@ -17,3 +17,7 @@ p {
     align-items: center;
     height: 150px;
 }
+
+form{
+    padding: 20px;
+}

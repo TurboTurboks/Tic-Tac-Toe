@@ -8,11 +8,18 @@ function Gameboard() {
     let player1 = Player();
     let player2 = Player();
 
+    const playerForm = document.getElementById("playerForm");
+
+    playerForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    player1.giveName(document.getElementById("first_player").value);
+    player2.giveName(document.getElementById("second_player").value);
+});
+
     let gameActive = true;
 
     let fields = document.querySelectorAll(".field");
-
-
 
     function handleClick(event) {
         if (playerTurn && event.target.textContent == "" && gameActive) {
@@ -45,11 +52,11 @@ function Gameboard() {
             (gameBoardFields[0] == gameBoardFields[4] && gameBoardFields[4] == gameBoardFields[8] && gameBoardFields[8] != null) ||
             (gameBoardFields[2] == gameBoardFields[4] && gameBoardFields[4] == gameBoardFields[6] && gameBoardFields[6] != null)) {
             if (!playerTurn) {
-                document.getElementById("pobjednik").innerText = "Pobjednik je X!";
+                document.getElementById("pobjednik").innerText = `Pobjednik je ${player1.returnName()}!`;
                 gameActive = false;
             }
             if (playerTurn) {
-                document.getElementById("pobjednik").innerText = "Pobjednik je O!"
+                document.getElementById("pobjednik").innerText = `Pobjednik je ${player2.returnName()}!`;
                 gameActive = false;
             }
 
@@ -65,11 +72,13 @@ Gameboard();
 //kreiraj objekat igraca
 function Player() {
     let score = 0;
+    let name;
+    function giveName(ime) {name = ime};
+    function returnName() {return name};
     function scoreIncrease() { score++; };
-    function scoreReset() { score = 0 };
     function showScore() { return score };
 
-    return { scoreIncrease, scoreReset, showScore }
+    return { scoreIncrease, returnName, showScore, giveName }
 };
 
 
