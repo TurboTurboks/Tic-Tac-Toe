@@ -1,0 +1,47 @@
+[33mcommit 0dde5bdea2a950bcfe10145952f83d37dd548ed9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Tue Nov 10 16:33:42 2026 +0100
+
+    Uredjivanje koda
+    Samo estetski organizovanje koda
+
+[33mcommit 8dc1525e5a29138848b5f4c79b67994fd032e5d2[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Tue Nov 10 16:08:09 2026 +0100
+
+    Odraditi sve neophonde funkcije
+    Napraviti sve funkcionalnosti sto se traze, ostaviti prostor za unaprjedjenje
+
+[33mcommit 245de0754a4a388d0cf7df93670e4d0c05296e7f[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Tue Nov 10 15:15:15 2026 +0100
+
+    Dodati mogucnost davanja i promjene imena igraca
+
+[33mcommit d2129547b44b3caf4c33acc4f169848d63d60232[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Tue Nov 10 14:32:38 2026 +0100
+
+    Napraviti osnovne funkcionalnosti
+    Napraviti souluciju za provjeru pobjednika,
+    i da se izbjegne editovanje vec koristenih dugmadi
+
+[33mcommit f98b462ee2fcf26c4098c9a0d092e242f39cb7bc[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Fri Nov 6 16:43:31 2026 +0100
+
+    Odraditi prvi prototip logige pobjede igraca
+
+[33mcommit c8dbcff622a72030e5e6a75faaf3e72f609278b9[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Fri Nov 6 16:13:26 2026 +0100
+
+    Odraditi osnove
+    Odraditi osnovni html da napravim grid za tabelu igre, u JS napraviti osnovnu logigu cekiranja
+
+[33mcommit 0d3c351d20e7e1ea8b2a437afa3b13205711fcdf[m
+Author: TurboTurboks <teotuta3@gmail.com>
+Date:   Fri Nov 6 14:00:27 2026 +0100
+
+    Osnovna postavka
+    Postaviti sve fajlove kako treba, uvezati CSS i js sa html i testirati

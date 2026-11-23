@@ -11,18 +11,11 @@ let playerTurn = true;
 let gameActive = true;
 
 let fields = document.querySelectorAll(".field");
-
 let score = document.querySelector("#rezultat");
 const playerForm = document.getElementById("playerForm");
 const restartButton = document.getElementById("restart")
 
-
-
-
-
-
-
-
+//funkcija za igranje
 function handleClick(event) {
     if (player2.returnName() == undefined || player1.returnName() == undefined) {
         alert("Please enter player names!")
